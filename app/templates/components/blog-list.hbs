@@ -1,0 +1,36 @@
+<table class="table table-hover table-responsive">
+  <thead>
+    <tr>
+      <th>
+        Headline
+      </th>
+      <th>
+        Author
+      </th>
+      <th>
+        Edit?
+      </th>
+      <th>
+        Delete?
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each blog as |blog|}}
+    <tr>
+      <td class="col-xs-5">
+        {{blog.headline}}
+      </td>
+      <td>
+        {{blog.author}}
+      </td>
+      <td class="col-xs-2">
+        <button class='btn btn-success btn-sm'>Update Article</button>
+      </td>
+      <td class="col-xs-2">
+        <button class="btn btn-danger btn-sm">Delete Article</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
