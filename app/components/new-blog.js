@@ -8,9 +8,9 @@ export default Ember.Component.extend({
     },
     saveBlog() {
       var params = {
-        headline: this.get('headline'),
-        author: this.get('author'),
-        content: this.get('content'),
+        headline: this.get('headline') ? this.get('headline') : "Please update this!",
+        author: this.get('author') ? this.get('author') : "Please update this!",
+        content: this.get('content') ? this.get('content') : "Please update this!",
       };
       this.set('addNewBlog', false);
       this.sendAction('saveBlog', params);
