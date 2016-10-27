@@ -21,7 +21,7 @@
     {{#each blog as |blog|}}
     <tr>
       <td class="col-xs-5">
-        {{blog.headline}}
+        {{#link-to 'blog' blog.id}}{{blog.headline}}{{/link-to}}
       </td>
       <td>
         {{blog.author}}

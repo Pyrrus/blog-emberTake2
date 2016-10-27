@@ -1,7 +1,7 @@
 <div class="row">
   {{#each model as |blog|}}
     <div class="col-md-6">
-      <h1>{{blog.headline}}</h1>
+      <h1>{{#link-to 'blog' blog.id}}{{blog.headline}}{{/link-to}}</h1>
       {{{blog.content}}}
       <h5>{{blog.author}}</h5>
     </div>
