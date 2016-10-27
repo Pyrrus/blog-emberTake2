@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('blog', params.blog_id);
+    return Ember.RSVP.hash({
+      blogs: this.store.findRecord('blog', params.blog_id),
+      comments: this.store.findAll('comments')
+    });
   }
 });

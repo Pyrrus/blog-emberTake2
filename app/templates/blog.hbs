@@ -1,7 +1,12 @@
 <div class="row">
     <div class="col-md-12">
-      <h1>{{model.headline}}</h1>
-      {{{model.content}}}
-      <h5>{{model.author}}</h5>
+      <h1>{{model.blogs.headline}}</h1>
+      {{{model.blogs.content}}}
+      <h5>{{model.blogs.author}}</h5>
     </div>
 </div>
+
+
+{{#each model.comments as |comment|}}
+  {{comment.author}}
+{{/each}}
