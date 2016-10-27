@@ -1,0 +1,14 @@
+{ "blogs": [{
+    "headline": "Adam is cool",
+    "author": "Adam Gorbahn",
+    "content": "Adam like anime like Hellsing, S-cry-ed, and Black Blood Brother. Very good at programming and web."
+  }, {
+    "headline": "Stephen can program",
+    "author": "Stephen",
+    "content": "Stephen can program. He likes to porgram. He also speaksin in the 3rd person at times. Yes, it's weird. But he can't help it. Do you program? Don't answer that. I can't hear you...."
+  }, {
+    "headline": "The guys",
+    "author": "Violet Beauregarde",
+    "content": "Stephen and Adam are awesome. I love working with them. All we do is play Nintendo all day. Wii!! Welp that's all I have to say about tha."
+  }]
+}
