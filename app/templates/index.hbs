@@ -1,1 +1,11 @@
-test
+<div class="row">
+  {{#each model as |blog|}}
+    <div class="col-md-6">
+      <h1>{{blog.headline}}</h1>
+      {{{blog.content}}}
+      <h5>{{blog.author}}</h5>
+    </div>
+  {{else}}
+    <div>something is wrong with the model</div>
+  {{/each}}
+</div>
