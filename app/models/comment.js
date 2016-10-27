@@ -4,5 +4,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   rating: DS.attr(),
   content: DS.attr(),
-  blog: DS.belongsTo('blog')
+  blog: DS.belongsTo('blog', { async: true })
 });
