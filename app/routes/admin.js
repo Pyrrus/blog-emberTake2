@@ -7,7 +7,12 @@ export default Ember.Route.extend({
   actions: {
     deleteBlog(blog) {
       if(confirm("Are you sure you want to delete this blog?")) {
-        blog.destroyRecord();
+        var comment_deletions = blog.get('comments').map(function(comment) {
+          return comment.destroyRecord();
+        });
+        Ember.RSVP.all(comment_deletions).then(function() {
+          return blog.destroyRecord();
+        });
         this.transitionTo('admin');
       }
     },
