@@ -6,7 +6,8 @@
     </div>
 </div>
 
-
 {{#each model.comments as |comment|}}
-  {{comment.author}}
+{{comment.author}}
 {{/each}}
+
+{{new-comment saveComment="saveComment" id=model.blogs.id}}
