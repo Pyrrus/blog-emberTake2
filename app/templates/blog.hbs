@@ -9,9 +9,9 @@
 <div class="row">
   <h3>Comments</h3>
   {{#each model.comments as |comment|}}
-    <div class="col-md-12">
-      {{comment.content}}
-      {{comment.author}}
+    <div class="col-md-12 commentBox">
+      {{comment.content}}<br>
+      Author: {{comment.author}}
     </div>
   {{/each}}
 </div>

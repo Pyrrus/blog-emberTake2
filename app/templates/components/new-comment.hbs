@@ -12,8 +12,8 @@
       {{input value=id type="hidden" id="id"}}
       <div class="form-group">
         <label for="content">Content</label>
-        {{textarea value=content id="content"}}
+        {{textarea value=content id="content" rows="6" cols="40"}}
       </div>
-      <button {{action 'saveComment' blog}}>Save</button>
+      <button {{action 'saveComment' blog}} class="btn btn-primary">Save</button>
     </form>
   </div>
