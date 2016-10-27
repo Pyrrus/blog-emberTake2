@@ -14,7 +14,7 @@
 
       <div class="form-group">
         <label for="content">Content</label>
-        {{textarea value=content id="content"}}
+        {{tinymce-editor options=options value=content}}
       </div>
 
       <button {{action 'saveBlog'}}>Save</button>

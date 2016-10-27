@@ -15,5 +15,11 @@ export default Ember.Component.extend({
       this.set('addNewBlog', false);
       this.sendAction('saveBlog', params);
     }
+  },
+  beforeModel: function(){
+    this._super(...arguments);
+    if (typeof tinymce == 'undefined'){
+      return Ember.$.getScript('//cdn.tinymce.com/4/tinymce.min.js');
+    }
   }
 });
