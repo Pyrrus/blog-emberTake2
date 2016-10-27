@@ -25,10 +25,10 @@
         {{blog.author}}
       </td>
       <td class="col-xs-2">
-        <button class='btn btn-success btn-sm'>Update Article</button>
+        <button class='btn btn-success btn-sm'>Update Blog</button>
       </td>
       <td class="col-xs-2">
-        <button class="btn btn-danger btn-sm">Delete Article</button>
+        <button class="btn btn-danger btn-sm" {{action 'deleteBlog' blog}}>Delete Blog</button>
       </td>
     </tr>
     {{/each}}
