@@ -1,13 +1,18 @@
 <div class="row">
     <div class="col-md-12">
-      <h1>{{model.blogs.headline}}</h1>
-      {{{model.blogs.content}}}
-      <h5>{{model.blogs.author}}</h5>
+      <h1>{{model.headline}}</h1>
+      {{{model.content}}}
+      <h5>{{model.author}}</h5>
     </div>
 </div>
 
-{{#each model.comments as |comment|}}
-{{comment.author}}
-{{/each}}
-
-{{new-comment saveComment="saveComment" id=model.blogs.id}}
+<div class="row">
+  <h3>Comments</h3>
+  {{#each model.comments as |comment|}}
+    <div class="col-md-12">
+      {{comment.content}}
+      {{comment.author}}
+    </div>
+  {{/each}}
+</div>
+{{new-comment saveComment="saveComment" id=model.id blog=model}}
