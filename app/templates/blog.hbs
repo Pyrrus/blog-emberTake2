@@ -12,6 +12,7 @@
     <div class="col-md-12 commentBox">
       {{comment.content}}<br>
       Author: {{comment.author}}
+      <button {{action 'deleteComment' comment}}>Delete Comment</button>
     </div>
   {{/each}}
 </div>

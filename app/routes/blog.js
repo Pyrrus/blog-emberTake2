@@ -13,6 +13,9 @@ export default Ember.Route.extend({
         return blog.save();
       });
       this.transitionTo('/blog/' + id);
+    },
+    deleteComment(comment) {
+      comment.destroyRecord();
     }
   }
 });
