@@ -18,7 +18,7 @@ export default Ember.Component.extend({
   },
   beforeModel: function(){
     this._super(...arguments);
-    if (typeof tinymce == 'undefined'){
+    if (typeof tinymce === 'undefined'){
       return Ember.$.getScript('//cdn.tinymce.com/4/tinymce.min.js');
     }
   }
