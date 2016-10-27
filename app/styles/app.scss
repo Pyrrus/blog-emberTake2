@@ -1,0 +1,23 @@
+
+.blog {
+  background-color: rgba(239, 243, 251, 0.89);
+  margin: 20px;
+}
+.blogIndex {
+  background-color: rgba(129, 206, 207, 0.57);
+  margin: 15px;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+#comments {
+  background-color: rgba(239, 243, 251, 0.89);
+  border-radius: 20px;
+  .commentBox {
+    margin: 10px;
+    background-color: rgba(156, 185, 231, 1);
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
+}

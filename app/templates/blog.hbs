@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row blog">
     <div class="col-md-12">
       <h1>{{model.headline}}</h1>
       {{{model.content}}}
@@ -6,13 +6,13 @@
     </div>
 </div>
 
-<div class="row">
+<div id="comments" class="row text-center">
   <h3>Comments</h3>
   {{#each model.comments as |comment|}}
-    <div class="col-md-12 commentBox">
+    <div class="col-md-11 commentBox">
       {{comment.content}}<br>
-      Author: {{comment.author}}
-      <button {{action 'deleteComment' comment}}>Delete Comment</button>
+      Author: {{comment.author}}<br>
+      <button {{action 'deleteComment' comment}} class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
     </div>
   {{/each}}
 </div>
