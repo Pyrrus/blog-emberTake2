@@ -10,6 +10,11 @@ export default Ember.Route.extend({
         blog.destroyRecord();
         this.transitionTo('admin');
       }
+    },
+    saveBlog(params) {
+      var newBlog = this.store.createRecord('blog', params);
+      newBlog.save();
+      this.transitionTo('admin');
     }
   }
 });
